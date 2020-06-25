@@ -1,0 +1,59 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.bar 
+{
+   position: fixed;
+   height: 100%;
+   width: 30px;
+   background-color: #36393f;
+   overflow: hidden;
+   transition: 0.8s;
+   box-shadow: 5px 5px 10px rgb(141,141,141);
+}
+.bar:hover
+{
+   width: 140px;
+}
+.bar:hover .menu ul li span
+{
+   opacity: 1;
+   pointer-events: visible;
+}
+.bar .menu
+{
+   display: flex;
+   width: 30px;
+   height: 100%;
+   background-color: #36393f;
+   color: #f2f2f2;
+}
+.menu a i
+{
+   margin-left: 5px;
+   margin-top: 100px;
+   font-weight: bolder;
+   color: white;
+}
+.menu a span
+{
+   position: absolute;
+   margin-top: 100px;
+   margin-left: 20px;
+   opacity: 0;
+   font-size: 15px; 
+   transition: 1.2s;
+   color: white;
+}
+.menu ul li
+{
+  display: flex;
+  cursor: pointer;
+}
+.menu ul li:hover span
+{
+   margin-left: 30px;
+   color: white;
+}
