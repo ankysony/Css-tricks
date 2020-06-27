@@ -112,13 +112,16 @@ div.screen header a.target-burger.toggled ul.buns li.bun {
 div.screen header a.target-burger.toggled ul.buns li.bun:last-child {
   transform: rotate(-45deg) translateZ(0);
 }
+.target-burger
+{
+    position: fixed;
+}
 div.screen header a.target-burger ul.buns {
   width: 1.625em;
   height: 1.625em;
   list-style: none;
   margin: -0.8125em 0 0 -0.8125em;
   padding: 0;
-  position: absolute;
   top: 50%;
   left: 50%;
   transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), color 1s cubic-bezier(0.23, 1, 0.32, 1);
@@ -129,7 +132,6 @@ div.screen header a.target-burger ul.buns li.bun {
   width: 100%;
   height: 2px;
   background-color: #fff;
-  position: absolute;
   top: 50%;
   margin-top: -0.75px;
   transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), background-color 1s cubic-bezier(0.23, 1, 0.32, 1);
