@@ -6,8 +6,43 @@
     padding: 0;
     font-family: 'Hind Siliguri', sans-serif;
 }
+.showcase {
+  background: rgba(2, 13, 17, 0.5);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+.showcase:before {
+  content: '';
+  background: url(truebsee-5337649_1920.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.showcase .inner
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   height: 100%;
+}
+.showcase .inner h1
+{
+   font-size: 5rem;
+}
+.showcase .inner p
+{
+   font-size: 1.2rem;
+   margin-top: 10px;
+}
 .bar 
 {
+   z-index: 1;
    position: fixed;
    height: 100%;
    width: 30px;
@@ -57,6 +92,6 @@
 }
 .menu ul li:hover span
 {
-   margin-left: 30px;
+   margin-left: 50px;
    color: white;
 }
